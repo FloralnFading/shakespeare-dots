@@ -20,3 +20,6 @@ fetch: pfetch
   
 
 ![image](https://user-images.githubusercontent.com/77693990/109399644-ebe7ed80-78f8-11eb-91de-25ac1cd225b5.png)
+
+![image](https://user-images.githubusercontent.com/77693990/109399706-47b27680-78f9-11eb-8b66-cb2018a02bda.png)
+
