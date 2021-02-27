@@ -1,0 +1,28 @@
+Config {  font    = "xft:Mononoki Nerd Font:pixelsize=12:antialias=true:hinting=true"
+       , additionalFonts = []
+       , borderColor = "#0c101c"
+       , border = TopB
+       , bgColor = "#101012"
+       , fgColor = "#e1d9c8"
+       , alpha = 255
+       , position = Static { xpos = 0 , ypos = 0, width = 1920, height = 20 }
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = True
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Cpu ["-L","3","-H","50",
+                               "--normal","#D58546","--high","#D58546"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                   -- , Run Com "uname" ["-s","-r"] "" 36000
+                    , Run Date "%a %b %_d %Y [%H:%M]" "date" 10
+                    , Run UnsafeStdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %UnsafeStdinReader% }{ %cpu%|%memory%|<fc=#e1d9c8>%date%</fc> "
+ }

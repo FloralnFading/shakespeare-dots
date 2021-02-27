@@ -1,0 +1,111 @@
+/**
+ * User: qball
+ * Copyright: Dave Davenport
+ */
+* {
+    text-color:  #e1d9c8;
+    font: "Mononoki Nerd Font 12";
+    background-color:  rgba(0,0,0,0);
+    dark: #1c1c1c;
+    // Black
+    black:       #1f1c1e;
+    lightblack:  #1f1c1e;
+    //
+    // Red
+    red:         #d76e6e;
+    lightred:    #d76e6e;
+    //
+    // Green
+    green:       #acb765;
+    lightgreen:  #acb765;
+    //
+    // Yellow
+    yellow:      #c1bf89;
+    lightyellow:     #c1bf89;
+    //
+    // Blue
+    blue:      #87c095;
+    lightblue:     #87c095;
+    //
+    // Magenta
+    magenta:      #d39bb6;
+    lightmagenta:     #d39bb6;
+    //
+    // Cyan
+    cyan:      #82abbc;
+    lightcyan:     #82abbc;
+    //
+    // White
+    white:      #f2c29b;
+    lightwhite:     #f2c29b;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff;
+}
+window {
+    height:   100%;
+    width: 30em;
+    location: west;
+    anchor:   west;
+    border:  0px 2px 0px 0px;
+    text-color: @lightwhite;
+}
+
+mode-switcher {
+    border: 2px 0px 0px 0px;
+    background-color: @lightblack;
+    padding: 4px;
+}
+button selected {
+    border-color: #10101299;
+    text-color: #e1d9c8;
+}
+inputbar {
+    background-color: #10101299;
+    text-color: #84573c;
+    padding: 4px;
+    border: 0px 0px 2px 0px;
+}
+mainbox {
+    expand: true;
+    background-color: #10101299;
+    spacing: 1em;
+}
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+element selected  normal {
+    background-color: #9d9481;
+}
+element normal active {
+    text-color: @lightblue;
+}
+element normal urgent {
+    text-color: @lightred;
+}
+element alternate normal {
+}
+element alternate active {
+    text-color: @lightblue;
+}
+element alternate urgent {
+    text-color: @lightred;
+}
+element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}
+
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 2px;
+    padding: 1em;
+}
